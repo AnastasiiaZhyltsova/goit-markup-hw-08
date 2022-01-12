@@ -1,0 +1,160 @@
+.page-footer {
+  background-color: getColor("footer-background");
+}
+
+.page-footer__container {
+  display: flex;
+}
+
+.contacts-footer {
+  margin-right: 85px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contacts-footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: getColor("white");
+}
+
+.address {
+  margin-bottom: 9px;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: getColor("white");
+}
+
+.contacts__item--first {
+  margin-bottom: 9px;
+}
+
+.contacts__link--color {
+  text-decoration: none;
+
+  color: getColor("contact-link");
+}
+
+/* footer social networks  */
+.join {
+  align-items: baseline;
+
+  margin-right: 93px;
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+
+.join--big-padding {
+  align-items: baseline;
+
+  padding-top: 75px;
+  padding-bottom: 97px;
+}
+
+.join__title {
+  margin-bottom: 20px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.15;
+
+  color: getColor("white");
+}
+
+.social__item {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link--color {
+  background-color: getColor("social-link-background");
+  fill: getColor("social-link");
+}
+.social__icon--color {
+  display: flex;
+  width: 20px;
+  height: 20px;
+
+  fill: getColor("white");
+}
+
+/* subscribe */
+
+.subscribe {
+  padding: 72px 0 94px 0;
+}
+
+.subscribe__title {
+  margin-bottom: 20px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.15;
+
+  color: getColor("white");
+}
+
+/* subscribe__form */
+.subscribe__form {
+  display: flex;
+}
+
+.subscribe__input {
+  display: inline-block;
+  width: 358px;
+
+  align-items: center;
+
+  margin-right: 12px;
+  padding: 15px 0 15px 16px;
+
+  font: getFont("primary-font");
+  font-size: 16px;
+  line-height: 1.25;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid getColor("subscribe-border");
+  border-radius: 4px;
+
+  background-color: getColor("subscribe-background");
+  transition: border-color 250ms getTimingFunction("primary");
+}
+
+.subscribe__input {
+  &::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: getColor("contact-link");
+  }
+
+  &:focus {
+    border-color: getColor("accent");
+    outline: getColor("accent");
+  }
+}
+
+.subscribe__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe__icon {
+  width: 24px;
+  height: 24px;
+
+  margin-left: 10px;
+}

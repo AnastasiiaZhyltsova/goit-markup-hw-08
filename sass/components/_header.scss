@@ -1,0 +1,11 @@
+.page-header {
+  border-bottom: 1px solid getColor("border-header");
+}
+.page-header__container {
+  display: flex;
+  align-items: center;
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,48 @@
+body {
+  font-family: getFont("primary-font"), sans-serif;
+  letter-spacing: 0.03em;
+
+  background-color: getColor("primary-backgroud");
+  color: getColor("primary-text");
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px 0 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &:nth-child(3) {
+    padding-top: 0;
+  }
+}
+
+.section__title {
+  margin-bottom: 50px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}

@@ -1,0 +1,84 @@
+/* backdrop */
+.backdrop {
+  position: fixed;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  top: 0;
+  background: getColor("backdrop-background");
+  opacity: 1;
+
+  transition: opacity 250ms getTimingFunction("primary");
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* modal*/
+.backdrop.is-hidden .modal {
+  opacity: 0;
+}
+
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background-color: getColor("white");
+  box-shadow: 0px 1px 3px getColor("shadow-first"),
+    0px 1px 1px getColor("shadow-second"), 0px 2px 1px getColor("shadow-third");
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 250ms getTimingFunction("primary"),
+    transform 250ms getTimingFunction("primary");
+}
+
+.modal__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+
+  background: getColor("white");
+  border: 1px solid getColor("shadow-filter-first");
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    fill: getColor("accent");
+  }
+}
+
+.modal_icon {
+  width: 18px;
+  height: 18px;
+}
+
+.modal__title {
+  margin-top: 37px;
+  margin-bottom: 12px;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: getColor("primary-text");
+}
