@@ -3,13 +3,18 @@
 }
 
 .page-footer__container {
-  display: flex;
+  text-align: center;
+
+  //   display: flex;
 }
 
 .contacts-footer {
-  margin-right: 85px;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (max-widt: 1200) {
+    margin-right: 85px;
+  }
 }
 
 .contacts-footer__logo {
