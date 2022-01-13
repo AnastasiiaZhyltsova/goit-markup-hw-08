@@ -1,25 +1,72 @@
-.nav-site {
-  display: flex;
-  margin-left: 93px;
-}
+.menu-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
 
-.nav-site__item {
-  margin-left: 50px;
+  z-index: 1;
 
-  &:first-child {
-    margin-left: 0;
+  padding: 48px 0 48px 40px;
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.18;
+
+  background-color: getColor("white");
+
+  &.is-open {
+    display: none;
   }
 }
 
-.nav-site__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+.button-menu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  display: inline-flex;
+
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+
+  cursor: pointer;
+  border: none;
+
+  background-color: transparent;
+}
+
+.button-memu__icon--cross {
+  display: none;
+}
+
+.button-menu.is-open .button-memu__icon--menu {
+  display: none;
+}
+
+.button-menu.is-open .button-memu__icon--cross {
+  display: block;
+}
+
+.nav-site__item {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 302px;
+  }
+  //   @media screen and (max-width: 1200px;) {
+  //     margin-left: 50px;
+
+  //     &:first-child {
+  //       margin-left: 0;
+  //     }
+  //   }
+}
+
+.nav-site__link {
+  //   display: block;
+
+  font-size: 40px;
   text-decoration: none;
 
   color: getColor("primary-text");
@@ -30,19 +77,35 @@
   &:focus {
     color: getColor("accent");
   }
+
+  //  @media screen and (width: 1200px) {
+  //     padding-top: 32px;
+  //     padding-bottom: 32px;
+
+  //     font-size: 14px
+  //     line-height: 1.14;
+  //   }
 }
 
-.nav-site__link--active {
-  &::after {
-    content: "";
-    display: block;
-    position: relative;
-    bottom: -33px;
+// .nav-site__link--active {
+//   &::after {
+//     content: "";
+//     display: block;
+//     position: relative;
+//     bottom: -33px;
 
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
+//     width: 100%;
+//     height: 4px;
+//     border-radius: 2px;
 
-    background-color: getColor("accent");
-  }
-}
+//     background-color: getColor("accent");
+//   }
+// }
+
+// .nav-site {
+
+//   //   @media screen and (max: 1200px) {
+//   //     display: flex;
+//   //     margin-left: 93px;
+//   //   }
+// }
