@@ -1,4 +1,5 @@
 .menu-header {
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -15,7 +16,7 @@
   background-color: getColor("white");
 
   &.is-open {
-    display: none;
+    display: block;
   }
 }
 
@@ -34,18 +35,24 @@
   border: none;
 
   background-color: transparent;
+  fill: getColor("primary-text");
+
+  &:hover,
+  &:focus {
+    fill: getColor("accent");
+  }
 }
 
 .button-memu__icon--cross {
   display: none;
 }
 
-.button-menu.is-open .button-memu__icon--menu {
-  display: none;
-}
-
 .button-menu.is-open .button-memu__icon--cross {
   display: block;
+}
+
+.button-menu.is-open .button-memu__icon--menu {
+  display: none;
 }
 
 .nav-site__item {

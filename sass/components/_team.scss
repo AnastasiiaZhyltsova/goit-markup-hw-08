@@ -2,20 +2,28 @@
   background-color: getColor("secondary-background");
 }
 
-.team {
-  display: flex;
-}
+// .team {
+//     @media screen and (width:1200px) {
+//          display: flex;
+//     }
+// }
 
 .team__member {
-  width: 270px;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   box-shadow: 0px 1px 3px getColor("shadow-first"),
     0px 1px 1px getColor("shadow-second"), 0px 2px 1px getColor("shadow-third");
   border-radius: 0px 0px 4px 4px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  //   @media screen and (width:1200px) {
+  //       &:not(:last-child) {
+  //     margin-right: 30px;
+  //   }
+  //   }
 }
 
 .team__box {
@@ -41,4 +49,8 @@
   text-align: center;
 
   color: getColor("secondary-text");
+}
+
+.taem__img {
+  width: 450px;
 }

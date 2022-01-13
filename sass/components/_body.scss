@@ -23,26 +23,37 @@ img {
   display: block;
 }
 .container {
-  width: 1200px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px 0 15px;
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &:nth-child(3) {
     padding-top: 0;
   }
+  // @media screen and (width:1200) {
+  //   padding-top: 94px;
+  //   padding-bottom: 94px;
+  // }
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
+  font-size: 28px;
+  line-height: 1.18;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
   text-align: center;
+
+  //   @media screen and (width: 1200) {
+  //     margin-bottom: 50px;
+
+  //     font-size: 36px;
+  //     line-height: 1.17;
+  //   }
 }
