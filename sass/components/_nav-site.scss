@@ -1,22 +1,28 @@
 .menu-header {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
 
-  z-index: 1;
+    z-index: 1;
 
-  padding: 48px 0 48px 40px;
+    padding: 48px 0 48px 40px;
 
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.18;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.18;
 
-  background-color: getColor("white");
+    background-color: getColor("white");
 
-  &.is-open {
-    display: block;
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+    display: flex;
   }
 }
 
@@ -41,6 +47,10 @@
   &:focus {
     fill: getColor("accent");
   }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .button-memu__icon--cross {
@@ -56,63 +66,66 @@
 }
 
 .nav-site__item {
-  margin-bottom: 32px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
 
-  &:last-child {
-    margin-bottom: 302px;
+    &:last-child {
+      margin-bottom: 302px;
+    }
   }
-  //   @media screen and (max-width: 1200px;) {
-  //     margin-left: 50px;
 
-  //     &:first-child {
-  //       margin-left: 0;
-  //     }
-  //   }
+  @media screen and (min-width: 768px) {
+    margin-left: 50px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 }
 
 .nav-site__link {
-  //   display: block;
+  display: block;
 
   font-size: 40px;
+  font-weight: 500;
   text-decoration: none;
 
   color: getColor("primary-text");
-
   transition: color 250ms getTimingFunction("primary");
-
   &:hover,
   &:focus {
     color: getColor("accent");
   }
 
-  //  @media screen and (width: 1200px) {
-  //     padding-top: 32px;
-  //     padding-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-  //     font-size: 14px
-  //     line-height: 1.14;
-  //   }
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
-// .nav-site__link--active {
-//   &::after {
-//     content: "";
-//     display: block;
-//     position: relative;
-//     bottom: -33px;
+.nav-site__link--active {
+  @media screen and (min-width: 768px) {
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
+      bottom: -33px;
 
-//     width: 100%;
-//     height: 4px;
-//     border-radius: 2px;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
 
-//     background-color: getColor("accent");
-//   }
-// }
+      background-color: getColor("accent");
+    }
+  }
+}
 
-// .nav-site {
-
-//   //   @media screen and (max: 1200px) {
-//   //     display: flex;
-//   //     margin-left: 93px;
-//   //   }
-// }
+.nav-site {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 88px;
+  }
+}
