@@ -1,8 +1,7 @@
 .form {
-  width: 448px;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+  width: calc(100%-40px * 2);
+  //   justify-content: center;
+  //   align-items: center;
 }
 
 .form__field {

@@ -1,13 +1,27 @@
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+
+  @media screen and(width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 .filter__item {
-  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 15px;
 
-  &:first-child {
-    margin-left: 0;
+  &:nth-child(n + 4) {
+    margin-bottom: 40px;
+  }
+  &:nth-child(2n + 3) {
+    margin-right: 0;
+  }
+
+  @media screen and (width: 1200px) {
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 

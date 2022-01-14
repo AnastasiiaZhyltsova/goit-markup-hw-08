@@ -6,55 +6,71 @@
   width: 100%;
   right: 0;
   top: 0;
+
+  padding: 93px 15px 0 15px;
+
   background: getColor("backdrop-background");
   opacity: 1;
 
   transition: opacity 250ms getTimingFunction("primary");
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  &.is-hidden .modal {
+    opacity: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+  }
 }
 
 /* modal*/
-.backdrop.is-hidden .modal {
-  opacity: 0;
-}
-
 .modal {
-  position: absolute;
-  width: 528px;
-  height: 581px;
+  position: relative;
 
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
+  padding: 40px 40px 0 40px;
 
   background-color: getColor("white");
+
   box-shadow: 0px 1px 3px getColor("shadow-first"),
     0px 1px 1px getColor("shadow-second"), 0px 2px 1px getColor("shadow-third");
   border-radius: 4px;
 
-  transform: translate(-50%, -50%);
   opacity: 1;
   transition: opacity 250ms getTimingFunction("primary"),
     transform 250ms getTimingFunction("primary");
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    max-width: 596px;
+    max-height: 609px;
+
+    width: 528px;
+    height: 581px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
 }
 
-.modal__button {
+.modal__close {
   position: absolute;
   top: 8px;
   right: 8px;
 
+  width: 30px;
+  height: 30px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 30px;
-  height: 30px;
 
   background: getColor("white");
   border: 1px solid getColor("shadow-filter-first");
@@ -66,19 +82,19 @@
   }
 }
 
-.modal_icon {
-  width: 18px;
-  height: 18px;
-}
-
 .modal__title {
-  margin-top: 37px;
   margin-bottom: 12px;
 
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
 
   color: getColor("primary-text");
+
+  word-wrap: break-word;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }

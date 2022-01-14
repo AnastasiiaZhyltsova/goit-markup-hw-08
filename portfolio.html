@@ -19,13 +19,18 @@
             <a class="logo" href="./index.html">
                 <span class="logo__label">Web</span>Studio
             </a>
-            <div class="menu-header is-open" menu-data>
+            <div class="menu-header is-open" id="menu-container" data-menu>
                 <nav class="nav-header">
                     <ul class="nav-site">
-                        <li class="nav-site__item"><a href="./index.html"
-                                class="nav-site__link  nav-site__link--active">Студия</a></li>
-                        <li class="nav-site__item"><a href="./portfolio.html" class="nav-site__link">Портфолио</a></li>
-                        <li class="nav-site__item"><a href="" class="nav-site__link">Контакты</a></li>
+                        <li class="nav-site__item">
+                            <a href="./index.html" class="nav-site__link  nav-site__link--active">Студия</a>
+                        </li>
+                        <li class="nav-site__item">
+                            <a href="./portfolio.html" class="nav-site__link">Портфолио</a>
+                        </li>
+                        <li class="nav-site__item">
+                            <a href="" class="nav-site__link">Контакты</a>
+                        </li>
                     </ul>
                 </nav>
                 <ul class="contacts-header">
@@ -45,7 +50,7 @@
                         </a>
                     </li>
                     <li class="contacts-header__item">
-                        <a href="tel:+380961111111" class="contacts-header__link  contacts-header__link--hidden">
+                        <a href="tel:+380961111111" class="contacts-header__link contacts-header__link--hidden">
                             <svg class="contacts-header__icon">
                                 <use href="./image/icon.svg#icon-smartphone"></use>
                             </svg>
@@ -69,7 +74,8 @@
                 </ul>
             </div>
             <button type="button" class="button-menu is-open" data-button-menu>
-                <svg width="40px" height="40px" aria-label="Переключатель мобильного меню" aria-expanded="false">
+                <svg width="40px" height="40px" aria-label="Переключатель мобильного меню" aria-expanded="false"
+                    aria-controls="menu-container">
                     <use class="button-memu__icon--menu" href='./image/icon.svg#icon-menu'></use>
                     <use class="button-memu__icon--cross" href='./image/icon.svg#icon-close'></use>
                 </svg>
@@ -83,7 +89,7 @@
            <div class="container">
                 <h1 class="section__title" hidden>Наши работы</h1>
                 <ul class="filter">
-                    <li class="filter__item filter__item--first"><button type="button" class="filter__button">Все</button></li>
+                    <li class="filter__item"><button type="button" class="filter__button">Все</button></li>
                     <li class="filter__item"><button type="button" class="filter__button">Веб-сайты</button></li>
                     <li class="filter__item"><button type="button" class="filter__button">Приложения</button></li>
                     <li class="filter__item"><button type="button" class="filter__button">Дизайн</button></li>
@@ -290,5 +296,6 @@
         </div>
     </div>
 </footer>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

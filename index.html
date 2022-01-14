@@ -19,7 +19,7 @@
         <a class="logo" href="./index.html">
             <span class="logo__label">Web</span>Studio
         </a>
-        <div class="menu-header is-open" data-menu>
+        <div class="menu-header is-open"  id="menu-container"  data-menu>
             <nav class="nav-header">
                 <ul class="nav-site">
                     <li class="nav-site__item">
@@ -73,11 +73,16 @@
                 </li>
             </ul>
             </div>
-            <button type="button" class="button-menu is-open" data-button-menu>
+            <button type="button" 
+            class="button-menu is-open"
+            data-button-menu>
                 <svg 
                 width="40px" 
                 height="40px"   
-                aria-label="Переключатель мобильного меню" aria-expanded="false"
+                aria-label="Переключатель мобильного меню" 
+                aria-expanded="false"
+                aria-controls="menu-container"
+               
                 >
                     <use class="button-memu__icon--menu" href='./image/icon.svg#icon-menu'></use>
                     <use class="button-memu__icon--cross" href='./image/icon.svg#icon-close'></use>
@@ -182,7 +187,7 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team">
                     <li class="team__member">
-                        <img class="team__img" src="./image/teamcard1.jpg" alt="Product Designer"  width="450px"/>
+                        <img class="team__img" src="./image/teamcard1.jpg" alt="Product Designer" width="450px" />
                         <div class="team__box">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p class="team__profession">Product Designer</p>
@@ -256,7 +261,7 @@
                         </div>
                     </li>
                     <li class="team__member">
-                        <img class="team__img" src="./image/teamcard3.jpg" alt="Marketing" width="450px" />
+                        <img class="team__img" src="./image/teamcard3.jpg" alt="Marketing"  width="450px"  />
                         <div class="team__box">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p class="team__profession">Marketing</p>
@@ -458,8 +463,8 @@
    <!--Модальное окно-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal__button" data-modal-close>
-                <svg class="modal__icon">
+            <button class="modal__close" data-modal-close >
+                <svg class="modal__icon" width="18px" height="18px">
                     <use href="./image/icon.svg#icon-close"></use>
                 </svg>
             </button>
@@ -468,21 +473,21 @@
                 <label class="form__field">
                     <span class="form__label">Имя</span>
                     <input class="form__input" type="text" name="name">
-                    <svg class="form__icon">
+                    <svg class="form__icon"  width="18px" height="18px">
                         <use href="image/icon.svg#icon-person"></use>
                     </svg>
                 </label>
                 <label class="form__field">
                     <span class="form__label">Телефон</span>
                     <input class="form__input" type="tel" name="tel">
-                    <svg class="form__icon">
+                    <svg class="form__icon"  width="18px" height="18px">
                         <use href="image/icon.svg#icon-phone"></use>
                     </svg>
                 </label>
                 <label class="form__field">
                     <span class="form__label">Почта</span>
                     <input class="form__input" type="email" name="email">
-                    <svg class="form__icon">
+                    <svg class="form__icon"  width="18px" height="18px">
                         <use href="image/icon.svg#icon-email"></use>
                     </svg>
                 </label>
