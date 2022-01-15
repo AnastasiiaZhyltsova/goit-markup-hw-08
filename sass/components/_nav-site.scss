@@ -21,7 +21,7 @@
     }
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 }
@@ -66,19 +66,21 @@
 }
 
 .nav-site__item {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 
-    &:last-child {
-      margin-bottom: 302px;
-    }
+  &:last-child {
+    margin-bottom: 302px;
   }
 
   @media screen and (min-width: 768px) {
-    margin-left: 50px;
+    margin: 0 0 0 50px;
 
     &:first-child {
       margin-left: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }

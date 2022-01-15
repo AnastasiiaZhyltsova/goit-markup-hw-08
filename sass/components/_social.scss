@@ -23,13 +23,15 @@
   border-radius: 50%;
   fill: getColor("social-link");
 
-  transition: fill 250ms getTimingFunction("primary"),
-    background-color 250ms getTimingFunction("primary");
+  @media screen and (min-width: 1200px) {
+    transition: fill 250ms getTimingFunction("primary"),
+      background-color 250ms getTimingFunction("primary");
 
-  &:hover,
-  &:focus {
-    fill: getColor("white");
-    background-color: getColor("accent");
+    &:hover,
+    &:focus {
+      fill: getColor("white");
+      background-color: getColor("accent");
+    }
   }
 }
 
