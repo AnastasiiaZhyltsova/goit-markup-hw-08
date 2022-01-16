@@ -2,6 +2,15 @@
   background-color: getColor("footer-background");
 }
 
+.contacts-section {
+  @media screen and(min-width:768px) {
+    display: flex;
+
+    padding-left: 61px;
+    padding-right: 74px;
+  }
+}
+
 .page-footer__container {
   text-align: center;
 
@@ -12,7 +21,10 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (max-width: 1200) {
+  @media screen and(min-width:768px) {
+    padding-bottom: 0;
+  }
+  @media screen and(min-width:1200px) {
     margin-right: 85px;
   }
 }
@@ -34,7 +46,7 @@
 
   color: getColor("white");
 
-  @media screen and (mix-width: 1200) {
+  @media screen and (mix-width: 1200px) {
     margin-bottom: 9px;
   }
 }
@@ -42,7 +54,7 @@
 .contacts__item--first {
   margin-bottom: 8px;
 
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
   }
 }
@@ -55,17 +67,14 @@
 
 /* footer social networks  */
 .join {
-  align-items: baseline;
-
-  @media screen and (min-width: 1200) {
-    margin-right: 93px;
-    padding-top: 72px;
-    padding-bottom: 100px;
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+    padding-top: 65px;
   }
 }
 
 .join--big-padding {
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: 1200px) {
     align-items: baseline;
 
     padding-top: 75px;
@@ -109,7 +118,7 @@
 .subscribe {
   padding: 60px 0 60px 0;
 
-  @media screen and (mix-width: 1200) {
+  @media screen and (mix-width: 1200px) {
     padding: 72px 0 94px 0;
   }
 }
@@ -127,16 +136,13 @@
 
 /* subscribe__form */
 .subscribe__form {
-  justify-content: center;
-
-  @media screen and (mix-width: 1200) {
+  @media screen and (mix-width: 1200px) {
     display: flex;
   }
 }
 
 .subscribe__input {
-  display: inline-block;
-  width: 100%;
+  width: 450px;
 
   padding: 15px 0 15px 16px;
   margin-bottom: 20px;
@@ -151,17 +157,6 @@
   background-color: getColor("subscribe-background");
   transition: border-color 250ms getTimingFunction("primary");
 
-  @media screen and (mix-width: 1200) {
-    //   display: flex;
-    //   align-items: center;
-    width: 358px;
-    align-items: center;
-
-    margin-right: 12px;
-  }
-}
-
-.subscribe__input {
   &::placeholder {
     font-style: normal;
     font-weight: normal;
@@ -175,13 +170,23 @@
     border-color: getColor("accent");
     outline: getColor("accent");
   }
+
+  @media screen and (mix-width: 1200px) {
+    display: flex;
+    align-items: center;
+    width: 358px;
+    align-items: center;
+
+    margin-right: 12px;
+  }
 }
 
-// .subscribe__button {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
+.subscribe__button {
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto;
+}
 
 .subscribe__icon {
   width: 24px;

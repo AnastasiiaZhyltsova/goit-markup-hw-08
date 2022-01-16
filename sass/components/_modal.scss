@@ -23,6 +23,9 @@
   &.is-hidden .modal {
     opacity: 0;
   }
+  @media screen and (min-width: 768px) {
+    padding: 208px 159px 0 159px;
+  }
 
   @media screen and (min-width: 1200px) {
     padding: 0;
@@ -45,10 +48,11 @@
   transition: opacity 250ms getTimingFunction("primary"),
     transform 250ms getTimingFunction("primary");
 
+  @media screen and (min-width: 768px) {
+  }
+
   @media screen and (min-width: 1200px) {
     position: absolute;
-    max-width: 596px;
-    max-height: 609px;
 
     width: 528px;
     height: 581px;

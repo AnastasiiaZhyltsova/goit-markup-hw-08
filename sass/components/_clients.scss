@@ -8,14 +8,12 @@
   height: 92px;
 
   align-items: center;
-  //   margin-right: 30px;
-  //   margin-bottom: 30px;
 
   &:nth-child(2n + 1) {
     margin-right: 30px;
   }
 
-  &:nth-child(n + 5) {
+  &:nth-child(-n + 4) {
     margin-bottom: 30px;
   }
 

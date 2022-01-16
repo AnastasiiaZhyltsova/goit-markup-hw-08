@@ -116,7 +116,7 @@
   width: 16px;
   height: 15px;
 
-  margin-right: 8.38px;
+  margin-right: 8px;
 
   fill: getColor("primary-text");
   transition: fill 250ms getTimingFunction("primary"),
@@ -143,7 +143,8 @@
 
   margin-right: 8.38px;
 
-  fill: getColor("white");
+  //   fill: getColor("white");
+
   opacity: 0;
 
   transition: opacity 250ms getTimingFunction("primary");
@@ -154,10 +155,15 @@
 }
 
 .checkbox__text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
 
   color: getColor("secondary-text");
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__text--blue {
