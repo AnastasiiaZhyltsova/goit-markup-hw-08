@@ -1,187 +1,195 @@
 .page-footer {
-  background-color: getColor("footer-background");
+    background-color: getColor("footer-background");
 }
 
 .contacts-section {
-  @media screen and(min-width:768px) {
-    display: flex;
-    justify-content: space-around;
-  }
+    @media screen and(min-width:768px) {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 .page-footer__container {
-  text-align: center;
+    text-align: center;
 
-  @media screen and(min-width:1200px) {
-    display: flex;
-    justify-content: space-between;
-  }
+    @media screen and(min-width:1200px) {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 60px;
+    }
 }
 
 .contacts-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-  @media screen and(min-width:768px) {
-    padding-bottom: 0;
-  }
-  @media screen and(min-width:1200px) {
-    margin-right: 70px;
-  }
+    @media screen and(min-width:768px) {
+        padding-bottom: 0;
+    }
+    @media screen and(min-width:1200px) {
+        margin-right: 70px;
+    }
 }
 
 .contacts-footer__logo {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 0;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 0;
 
-  color: getColor("white");
+    color: getColor("white");
 }
 
 .address {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
 
-  color: getColor("white");
+    color: getColor("white");
 
-  @media screen and (mix-width: 1200px) {
-    margin-bottom: 9px;
-  }
+    @media screen and (mix-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .contacts__item--first {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 9px;
-  }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .contacts__link--color {
-  text-decoration: none;
+    text-decoration: none;
 
-  color: getColor("contact-link");
+    color: getColor("contact-link");
 }
 
 /* footer social networks  */
 .join {
-  @media screen and (min-width: 768px) {
-    padding-top: 65px;
-  }
+    @media screen and (min-width: 768px) {
+        padding-top: 65px;
+    }
 
-  @media screen and (min-width: 1200px) {
-    padding-top: 72px;
-  }
+    @media screen and (min-width: 1200px) {
+        padding-top: 72px;
+    }
 }
 
 .join--big-padding {
-  @media screen and (min-width: 1200px) {
-    padding-top: 75px;
-    padding-bottom: 97px;
-  }
+    @media screen and (min-width: 1200px) {
+        padding-top: 75px;
+        padding-bottom: 97px;
+    }
 }
 
 .join__title,
 .subscribe__title {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
 
-  color: getColor("white");
+    color: getColor("white");
 
-  @media screen and (min-width: 1200px) {
-    text-align: left;
-  }
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .social__item {
-  margin-right: 10px;
-  &:last-child {
-    margin-right: 0;
-  }
+    margin-right: 10px;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .social__link--color {
-  background-color: getColor("social-link-background");
-  fill: getColor("social-link");
+    background-color: getColor("social-link-background");
+    fill: getColor("social-link");
 }
 .social__icon--color {
-  display: flex;
-  width: 20px;
-  height: 20px;
+    display: flex;
+    width: 20px;
+    height: 20px;
 
-  fill: getColor("white");
+    fill: getColor("white");
 }
 
 /* subscribe */
 
 .subscribe {
-  padding: 60px 0 60px 0;
+    padding: 60px 0 60px 0;
 
-  @media screen and (min-width: 1200px) {
-    padding: 72px 0 0 0;
-  }
+    @media screen and (min-width: 1200px) {
+        padding: 72px 0 0 0;
+    }
 }
 
 /* subscribe__form */
 .subscribe__form {
-  @media screen and (min-width: 1200px) {
     display: flex;
-  }
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .subscribe__input {
-  width: 450px;
+    // width: 450px;
+    width: 100%;
+    padding: 15px 0 15px 16px;
+    margin-bottom: 20px;
 
-  padding: 15px 0 15px 16px;
-  margin-bottom: 20px;
-
-  color: getFont("primary-font");
-  font-size: 16px;
-  line-height: 1.25;
-
-  border: 1px solid getColor("subscribe-border");
-  border-radius: 4px;
-
-  background-color: getColor("subscribe-background");
-  transition: border-color 250ms getTimingFunction("primary");
-
-  &::placeholder {
-    font-style: normal;
-    font-weight: normal;
+    color: getFont("primary-font");
     font-size: 16px;
     line-height: 1.25;
 
-    color: getColor("contact-link");
-  }
+    border: 1px solid getColor("subscribe-border");
+    border-radius: 4px;
 
-  &:focus {
-    border-color: getColor("accent");
-    outline: getColor("accent");
-  }
+    background-color: getColor("subscribe-background");
+    transition: border-color 250ms getTimingFunction("primary");
 
-  @media screen and (min-width: 1200px) {
-    width: 358px;
+    &::placeholder {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.25;
 
-    margin-right: 12px;
-    margin-bottom: 0;
-  }
+        color: getColor("contact-link");
+    }
+
+    &:focus {
+        border-color: getColor("accent");
+        outline: getColor("accent");
+    }
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+
+        margin-right: 12px;
+        margin-bottom: 0;
+    }
 }
 
 .subscribe__button {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .subscribe__icon {
-  width: 24px;
-  height: 24px;
+    width: 24px;
+    height: 24px;
 
-  margin-left: 10px;
+    margin-left: 10px;
 }

@@ -1,103 +1,112 @@
 /* backdrop */
 .backdrop {
-  position: fixed;
-  z-index: 2;
-  height: 100%;
-  width: 100%;
-  right: 0;
-  top: 0;
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top: 0;
 
-  padding: 93px 15px 0 15px;
+    overflow-y: scroll;
 
-  background: getColor("backdrop-background");
-  opacity: 1;
+    padding: 93px 15px 0 15px;
 
-  transition: opacity 250ms getTimingFunction("primary");
+    background: getColor("backdrop-background");
+    opacity: 1;
 
-  &.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-  }
+    transition: opacity 250ms getTimingFunction("primary");
 
-  &.is-hidden .modal {
-    opacity: 0;
-  }
-  @media screen and (min-width: 768px) {
-    padding: 208px 159px 0 159px;
-  }
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
 
-  @media screen and (min-width: 1200px) {
-    padding: 0;
-  }
+    &.is-hidden .modal {
+        opacity: 0;
+    }
+    @media screen and (min-width: 768px) {
+        padding: 208px 159px 0 159px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 0;
+    }
 }
 
 /* modal*/
 .modal {
-  position: relative;
-  width: 450px;
-  height: 609px;
+    position: relative;
+    // width: 450px;
+    width: 100%;
+    height: 609px;
 
-  padding: 40px 40px 40px 40px;
+    padding: 40px 40px 40px 40px;
 
-  background-color: getColor("white");
+    background-color: getColor("white");
 
-  box-shadow: 0px 1px 3px getColor("shadow-first"),
-    0px 1px 1px getColor("shadow-second"), 0px 2px 1px getColor("shadow-third");
-  border-radius: 4px;
+    box-shadow: 0px 1px 3px getColor("shadow-first"),
+        0px 1px 1px getColor("shadow-second"),
+        0px 2px 1px getColor("shadow-third");
+    border-radius: 4px;
 
-  opacity: 1;
-  transition: opacity 250ms getTimingFunction("primary"),
-    transform 250ms getTimingFunction("primary");
+    opacity: 1;
+    transition: opacity 250ms getTimingFunction("primary"),
+        transform 250ms getTimingFunction("primary");
 
-  @media screen and (min-width: 1200px) {
-    position: absolute;
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        position: absolute;
 
-    width: 528px;
-    height: 581px;
+        min-width: 528px;
+        height: 581px;
 
-    top: 50%;
-    left: 50%;
+        top: 50%;
+        left: 50%;
 
-    transform: translate(-50%, -50%);
-  }
+        transform: translate(-50%, -50%);
+    }
 }
 
 .modal__close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
 
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  background: getColor("white");
-  border: 1px solid getColor("shadow-filter-first");
-  border-radius: 50%;
+    background: getColor("white");
+    border: 1px solid getColor("shadow-filter-first");
+    border-radius: 50%;
 
-  &:hover,
-  &:focus {
-    fill: getColor("accent");
-  }
+    &:hover,
+    &:focus {
+        fill: getColor("accent");
+    }
 }
 
 .modal__title {
-  margin-bottom: 12px;
+    margin-bottom: 12px;
 
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
 
-  color: getColor("primary-text");
+    color: getColor("primary-text");
 
-  word-wrap: break-word;
+    word-wrap: break-word;
 
-  @media screen and (min-width: 1200px) {
-    line-height: 1.15;
-  }
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+    }
 }

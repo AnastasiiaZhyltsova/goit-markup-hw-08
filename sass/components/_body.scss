@@ -1,12 +1,15 @@
 body {
-  font-family: getFont("primary-font"), sans-serif;
-  letter-spacing: 0.03em;
+    font-family: getFont("primary-font"), sans-serif;
+    letter-spacing: 0.03em;
 
-  background-color: getColor("primary-backgroud");
-  color: getColor("primary-text");
+    background-color: getColor("primary-backgroud");
+    color: getColor("primary-text");
+    &.modal-open {
+        overflow: hidden;
+    }
 }
 ul {
-  list-style: none;
+    list-style: none;
 }
 h1,
 h2,
@@ -15,58 +18,65 @@ h4,
 h5,
 p,
 ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .container {
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 15px 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px 0 15px;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+    // @media screen and (min-width: 480px) {
+    //   width: 480px;
+    // }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-  &:nth-child(3) {
-    padding-top: 0;
-  }
+    &:nth-child(3) {
+        padding-top: 0;
+    }
 
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .section__title {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 
-  font-size: 28px;
-  line-height: 1.18;
-  font-weight: bold;
-  text-align: center;
+    font-size: 28px;
+    line-height: 1.18;
+    font-weight: bold;
+    text-align: center;
 
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
 
-    font-size: 36px;
-    line-height: 1.17;
-  }
+        font-size: 36px;
+        line-height: 1.17;
+    }
+}
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
