@@ -1,6 +1,6 @@
 .hero-section {
-  min-width: 480px;
-  //   height: 600px;
+  width: 480px;
+    height: 400px;
 
   padding: 200px 0;
   margin-left: auto;
@@ -12,12 +12,77 @@
       getColor("hero-gradient"),
       getColor("hero-gradient")
     ),
-    url(../../image/background-hero.jpg);
+    url(../../image/mobile.jpg);
+
   background-position: center;
-  background-size: cover;
+  background-size: 480px 400px;
 
   background-color: getColor("hero-background");
   color: getColor("white");
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        getColor("hero-gradient"),
+        getColor("hero-gradient")
+      ),
+      url(../../image/mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    width: 768px;
+    height: 400px;
+    background-image: linear-gradient(
+        getColor("hero-gradient"),
+        getColor("hero-gradient")
+      ),
+      url(../../image/tablet.jpg);
+    background-size: 768px 400px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          getColor("hero-gradient"),
+          getColor("hero-gradient")
+        ),
+        url(../../image/tablet@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        getColor("hero-gradient"),
+        getColor("hero-gradient")
+      ),
+      url(../../image/desktop.jpg);
+
+      background-size: 1600px 600px;
+  }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          getColor("hero-gradient"),
+          getColor("hero-gradient")
+        ),
+        url(../../image/desktop@2x.jpg);
+    }
+  }
 }
 
 .hero-section__title {
