@@ -3,6 +3,13 @@
     margin-left: 84px;
     padding: 21px 0 21px 0;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    margin-left: 305px;
+    padding: 32px 0 32px 0;
+  }
 }
 
 .contacts-header__link--number {
@@ -29,8 +36,21 @@
     }
   }
   @media screen and (min-width: 768px) {
+    &:first-child {
+      margin-bottom: 0;
+    }
     &:nth-child(2) {
       margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2) {
+      margin-right: 30px;
     }
   }
 }

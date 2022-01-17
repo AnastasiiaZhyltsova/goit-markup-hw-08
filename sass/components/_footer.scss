@@ -5,16 +5,17 @@
 .contacts-section {
   @media screen and(min-width:768px) {
     display: flex;
-
-    padding-left: 61px;
-    padding-right: 74px;
+    justify-content: space-around;
   }
 }
 
 .page-footer__container {
   text-align: center;
 
-  //   display: flex;
+  @media screen and(min-width:1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .contacts-footer {
@@ -25,7 +26,7 @@
     padding-bottom: 0;
   }
   @media screen and(min-width:1200px) {
-    margin-right: 85px;
+    margin-right: 70px;
   }
 }
 
@@ -68,15 +69,16 @@
 /* footer social networks  */
 .join {
   @media screen and (min-width: 768px) {
-    margin-left: 165px;
     padding-top: 65px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 72px;
   }
 }
 
 .join--big-padding {
   @media screen and (min-width: 1200px) {
-    align-items: baseline;
-
     padding-top: 75px;
     padding-bottom: 97px;
   }
@@ -92,6 +94,10 @@
   line-height: 1.14;
 
   color: getColor("white");
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .social__item {
@@ -118,25 +124,14 @@
 .subscribe {
   padding: 60px 0 60px 0;
 
-  @media screen and (mix-width: 1200px) {
-    padding: 72px 0 94px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 72px 0 0 0;
   }
-}
-
-.subscribe__title {
-  margin-bottom: 20px;
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.15;
-
-  color: getColor("white");
 }
 
 /* subscribe__form */
 .subscribe__form {
-  @media screen and (mix-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -147,7 +142,7 @@
   padding: 15px 0 15px 16px;
   margin-bottom: 20px;
 
-  font: getFont("primary-font");
+  color: getFont("primary-font");
   font-size: 16px;
   line-height: 1.25;
 
@@ -171,21 +166,17 @@
     outline: getColor("accent");
   }
 
-  @media screen and (mix-width: 1200px) {
-    display: flex;
-    align-items: center;
+  @media screen and (min-width: 1200px) {
     width: 358px;
-    align-items: center;
 
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
 .subscribe__button {
   display: flex;
   justify-content: center;
-
-  margin: 0 auto;
 }
 
 .subscribe__icon {

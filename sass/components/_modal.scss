@@ -35,8 +35,10 @@
 /* modal*/
 .modal {
   position: relative;
+  width: 450px;
+  height: 609px;
 
-  padding: 40px 40px 0 40px;
+  padding: 40px 40px 40px 40px;
 
   background-color: getColor("white");
 
@@ -47,9 +49,6 @@
   opacity: 1;
   transition: opacity 250ms getTimingFunction("primary"),
     transform 250ms getTimingFunction("primary");
-
-  @media screen and (min-width: 768px) {
-  }
 
   @media screen and (min-width: 1200px) {
     position: absolute;
