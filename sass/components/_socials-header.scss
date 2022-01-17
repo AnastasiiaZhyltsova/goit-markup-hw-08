@@ -1,26 +1,27 @@
 .socials-header {
-  display: flex;
+    display: flex;
 
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .socials-header__item {
-  &:not(:last-child) {
-    margin-right: 10px;
-    padding-right: 10px;
+    &:not(:last-child) {
+        margin-right: 10px;
+        padding-right: 10px;
 
-    border-right: 1px solid getColor("border-input");
-  }
+        border-right: 1px solid getColor("border-input");
+    }
 }
 
 .socials-header__link {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
+    font-weight: 500;
+    // font-size: 18px;
+    font-size: 14px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
 
-  text-decoration: none;
-  color: getColor("accent");
+    text-decoration: none;
+    color: getColor("accent");
 }

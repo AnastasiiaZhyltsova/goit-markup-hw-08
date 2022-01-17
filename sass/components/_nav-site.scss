@@ -1,142 +1,143 @@
 .menu-header {
-  @media screen and (max-width: 767px) {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
+    @media screen and (max-width: 767px) {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
 
-    z-index: 1;
+        z-index: 1;
 
-    padding: 48px 0 48px 40px;
+        padding: 48px 40px;
 
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    line-height: 1.18;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        line-height: 1.18;
 
-    background-color: getColor("white");
+        background-color: getColor("white");
 
-    &.is-open {
-      display: block;
+        &.is-open {
+            display: block;
+        }
     }
-  }
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 .button-menu {
-  position: absolute;
-  top: 10px;
-  right: 15px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
 
-  display: inline-flex;
+    display: inline-flex;
 
-  margin: 0;
-  padding: 0;
-  z-index: 2;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
 
-  cursor: pointer;
-  border: none;
+    cursor: pointer;
+    border: none;
 
-  background-color: transparent;
-  fill: getColor("primary-text");
+    background-color: transparent;
+    fill: getColor("primary-text");
 
-  &:hover,
-  &:focus {
-    fill: getColor("accent");
-  }
+    &:hover,
+    &:focus {
+        fill: getColor("accent");
+    }
 
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .button-memu__icon--cross {
-  display: none;
+    display: none;
 }
 
 .button-menu.is-open .button-memu__icon--cross {
-  display: block;
+    display: block;
 }
 
 .button-menu.is-open .button-memu__icon--menu {
-  display: none;
+    display: none;
 }
 
 .nav-site__item {
-  margin-bottom: 32px;
-
-  &:last-child {
-    margin-bottom: 302px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin: 0 0 0 50px;
-
-    &:first-child {
-      margin-left: 0;
-    }
+    margin-bottom: 32px;
 
     &:last-child {
-      margin-bottom: 0;
+        margin-bottom: 302px;
     }
-  }
+
+    @media screen and (min-width: 768px) {
+        margin: 0 0 0 50px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .nav-site__link {
-  display: block;
+    display: block;
 
-  font-size: 40px;
-  font-weight: 500;
-  text-decoration: none;
+    font-size: 40px;
+    font-weight: 500;
+    text-decoration: none;
 
-  color: getColor("primary-text");
-  transition: color 250ms getTimingFunction("primary");
-  &:hover,
-  &:focus {
-    color: getColor("accent");
-  }
+    color: getColor("primary-text");
+    transition: color 250ms getTimingFunction("primary");
+    &:hover,
+    &:focus {
+        color: getColor("accent");
+    }
 
-  @media screen and (min-width: 768px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    @media screen and (min-width: 768px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
 
-    font-size: 14px;
-    line-height: 1.14;
-  }
+        font-size: 14px;
+        line-height: 1.14;
+    }
 }
 
 .nav-site__link--active {
-  @media screen and (min-width: 768px) {
-    &::after {
-      content: "";
-      display: block;
-      position: relative;
-      bottom: -33px;
+    color: getColor("accent");
+    @media screen and (min-width: 768px) {
+        &::after {
+            content: "";
+            display: block;
+            position: relative;
+            bottom: -33px;
 
-      width: 100%;
-      height: 4px;
-      border-radius: 2px;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
 
-      background-color: getColor("accent");
+            background-color: getColor("accent");
+        }
     }
-  }
 }
 
 .nav-site {
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 .nav-header {
-  @media screen and (min-width: 768px) {
-    margin-left: 88px;
-  }
+    @media screen and (min-width: 768px) {
+        margin-left: 88px;
+    }
 
-  @media screen and (min-width: 1200px) {
-    margin-left: 94px;
-  }
+    @media screen and (min-width: 1200px) {
+        margin-left: 94px;
+    }
 }
