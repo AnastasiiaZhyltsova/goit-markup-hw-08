@@ -26,6 +26,7 @@
     padding-bottom: 0;
   }
   @media screen and(min-width:1200px) {
+    padding-bottom: 60px;
     margin-right: 70px;
   }
 }
@@ -131,18 +132,22 @@
 
 /* subscribe__form */
 .subscribe__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media screen and (min-width: 1200px) {
-    display: flex;
+    flex-direction: row;
   }
 }
 
 .subscribe__input {
-  width: 450px;
+  width: 100%;
 
   padding: 15px 0 15px 16px;
   margin-bottom: 20px;
 
-  color: getFont("primary-font");
+  color: getFont("primary-color");
   font-size: 16px;
   line-height: 1.25;
 
@@ -164,6 +169,10 @@
   &:focus {
     border-color: getColor("accent");
     outline: getColor("accent");
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
   }
 
   @media screen and (min-width: 1200px) {

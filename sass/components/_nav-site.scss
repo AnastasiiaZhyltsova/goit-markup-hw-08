@@ -33,8 +33,6 @@
 
   display: inline-flex;
 
-  margin: 0;
-  padding: 0;
   z-index: 2;
 
   cursor: pointer;
@@ -94,6 +92,7 @@
 
   color: getColor("primary-text");
   transition: color 250ms getTimingFunction("primary");
+
   &:hover,
   &:focus {
     color: getColor("accent");
@@ -109,6 +108,8 @@
 }
 
 .nav-site__link--active {
+  color: getColor(accent);
+
   @media screen and (min-width: 768px) {
     &::after {
       content: "";
@@ -128,15 +129,10 @@
 .nav-site {
   @media screen and (min-width: 768px) {
     display: flex;
-  }
-}
-
-.nav-header {
-  @media screen and (min-width: 768px) {
     margin-left: 88px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-left: 94px;
+    margin-left: 93px;
   }
 }

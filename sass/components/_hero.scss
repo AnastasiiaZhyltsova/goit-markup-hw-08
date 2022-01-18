@@ -1,8 +1,5 @@
 .hero-section {
-  width: 480px;
-    height: 400px;
-
-  padding: 200px 0;
+  padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
 
@@ -15,7 +12,7 @@
     url(../../image/mobile.jpg);
 
   background-position: center;
-  background-size: 480px 400px;
+  background-size: cover;
 
   background-color: getColor("hero-background");
   color: getColor("white");
@@ -35,14 +32,13 @@
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    width: 768px;
-    height: 400px;
     background-image: linear-gradient(
         getColor("hero-gradient"),
         getColor("hero-gradient")
       ),
       url(../../image/tablet.jpg);
-    background-size: 768px 400px;
+    background-position: center;
+    background-size: cover;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -60,33 +56,30 @@
 
 @media screen and (min-width: 1200px) {
   .hero-section {
-    width: 1600px;
-    height: 600px;
+    padding: 200px 0;
     background-image: linear-gradient(
         getColor("hero-gradient"),
         getColor("hero-gradient")
       ),
       url(../../image/desktop.jpg);
-
-      background-size: 1600px 600px;
+    background-position: center;
+    background-size: cover;
   }
-  }
+}
 
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero-section {
-      background-image: linear-gradient(
-          getColor("hero-gradient"),
-          getColor("hero-gradient")
-        ),
-        url(../../image/desktop@2x.jpg);
-    }
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        getColor("hero-gradient"),
+        getColor("hero-gradient")
+      ),
+      url(../../image/desktop@2x.jpg);
   }
 }
 
 .hero-section__title {
-  min-width: 360px;
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -97,8 +90,6 @@
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 40px;
-
-    min-width: 696px;
 
     font-size: 44px;
     line-height: 1.36;

@@ -1,19 +1,20 @@
 .logo {
   padding: 16px 0 16px 0;
 
-  font-family: getFont("primary");
+  font-family: getFont("secondary-font");
   font-weight: bold;
   font-size: 24px;
   line-height: 1.17;
   text-decoration: none;
 
   color: getColor("black");
-}
-.logo__label {
-  color: getColor("accent");
 
   @media screen and (min-width: 1200px) {
+    padding: 0;
     font-size: 26px;
     line-height: 1.19;
   }
+}
+.logo__label {
+  color: getColor("accent");
 }
