@@ -187,7 +187,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 345px;
+    margin-left: 305px;
+    padding: 0;
   }
 }
 
@@ -206,17 +207,16 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .contacts-header__item:first-child {
-    margin-bottom: 32px;
-  }
-  .contacts-header__item:last-child {
-    margin-bottom: 64px;
-  }
+.contacts-header__item:first-child {
+  margin-bottom: 32px;
+}
+
+.contacts-header__item:last-child {
+  margin-bottom: 64px;
 }
 
 @media screen and (min-width: 768px) {
-  .contacts-header__item:first-child {
+  .contacts-header__item:first-child, .contacts-header__item:last-child {
     margin-bottom: 0;
   }
   .contacts-header__item:nth-child(2) {
@@ -227,8 +227,6 @@
 @media screen and (min-width: 1200px) {
   .contacts-header__item:nth-child(2) {
     margin-bottom: 0;
-  }
-  .contacts-header__item:nth-child(2) {
     margin-right: 30px;
   }
 }
@@ -257,6 +255,8 @@
 
 @media screen and (min-width: 1200px) {
   .contacts-header__link {
+    font-size: 14px;
+    line-height: 1.17;
     -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -353,7 +353,7 @@ img {
   padding: 0 15px 0 15px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -537,12 +537,18 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   height: 120px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 768px) {
+  .features__box {
+    margin-bottom: 30px;
+  }
+}
+
 .features__subtitle {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -552,13 +558,11 @@ img {
 
 @media screen and (min-width: 768px) {
   .features__subtitle {
-    margin-bottom: 10px;
     text-align: left;
   }
 }
 
 .features__text {
-  width: 100%;
   font-size: 14px;
   line-height: 1.7;
   color: #757575;
@@ -1313,6 +1317,8 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     position: absolute;
+    width: 528px;
+    height: 581px;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
