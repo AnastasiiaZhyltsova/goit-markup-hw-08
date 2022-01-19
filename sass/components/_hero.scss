@@ -37,8 +37,6 @@
         getColor("hero-gradient")
       ),
       url(../../image/tablet.jpg);
-    background-position: center;
-    background-size: cover;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -62,20 +60,18 @@
         getColor("hero-gradient")
       ),
       url(../../image/desktop.jpg);
-    background-position: center;
-    background-size: cover;
   }
-}
 
-@media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero-section {
-    background-image: linear-gradient(
-        getColor("hero-gradient"),
-        getColor("hero-gradient")
-      ),
-      url(../../image/desktop@2x.jpg);
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          getColor("hero-gradient"),
+          getColor("hero-gradient")
+        ),
+        url(../../image/desktop@2x.jpg);
+    }
   }
 }
 
