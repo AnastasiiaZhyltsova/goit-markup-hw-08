@@ -36,6 +36,9 @@
   }
 }
 .portfolio__link {
+  display: flex;
+  flex-direction: column;
+
   text-decoration: none;
   border-radius: 4px;
 }
