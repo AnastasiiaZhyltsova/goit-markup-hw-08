@@ -1177,6 +1177,7 @@ img {
 }
 
 .portfolio__link {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1218,7 +1219,6 @@ img {
 .portfolio__desc {
   position: absolute;
   width: 322px;
-  height: 168px;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1254,16 +1254,6 @@ img {
   font-size: 16px;
   line-height: 1.87;
   color: #757575;
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
 }
 
 /* backdrop */
@@ -1537,10 +1527,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .button__form {
