@@ -1,6 +1,8 @@
 .contacts-header {
+  margin-bottom: 64px;
   @media screen and (min-width: 768px) {
     margin-left: 84px;
+    margin-bottom: 0px;
     padding: 21px 0 21px 0;
   }
 
@@ -30,13 +32,9 @@
   &:first-child {
     margin-bottom: 32px;
   }
-  &:last-child {
-    margin-bottom: 64px;
-  }
 
   @media screen and (min-width: 768px) {
-    &:first-child,
-    &:last-child {
+    &:first-child {
       margin-bottom: 0;
     }
     &:nth-child(2) {

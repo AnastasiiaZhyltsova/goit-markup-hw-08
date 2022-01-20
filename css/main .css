@@ -44,6 +44,7 @@
     left: 0;
     top: 0;
     width: 100vw;
+    height: 100vh;
     z-index: 1;
     padding: 48px 0 48px 40px;
     font-weight: 500;
@@ -53,6 +54,7 @@
   }
   .menu-header.is-open {
     display: block;
+    overflow-y: scroll;
   }
 }
 
@@ -101,10 +103,6 @@
 
 .nav-site__item {
   margin-bottom: 32px;
-}
-
-.nav-site__item:last-child {
-  margin-bottom: 302px;
 }
 
 @media screen and (min-width: 768px) {
@@ -159,8 +157,13 @@
   }
 }
 
+.nav-site {
+  margin-bottom: 305px;
+}
+
 @media screen and (min-width: 768px) {
   .nav-site {
+    margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -174,9 +177,14 @@
   }
 }
 
+.contacts-header {
+  margin-bottom: 64px;
+}
+
 @media screen and (min-width: 768px) {
   .contacts-header {
     margin-left: 84px;
+    margin-bottom: 0px;
     padding: 21px 0 21px 0;
   }
 }
@@ -213,12 +221,8 @@
   margin-bottom: 32px;
 }
 
-.contacts-header__item:last-child {
-  margin-bottom: 64px;
-}
-
 @media screen and (min-width: 768px) {
-  .contacts-header__item:first-child, .contacts-header__item:last-child {
+  .contacts-header__item:first-child {
     margin-bottom: 0;
   }
   .contacts-header__item:nth-child(2) {
@@ -406,6 +410,7 @@ img {
 }
 
 .hero-section {
+  max-width: 480px;
   padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
@@ -427,6 +432,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero-section {
+    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../image/tablet.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../image/tablet.jpg);
   }
@@ -441,6 +447,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero-section {
+    max-width: 1600px;
     padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../image/desktop.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../image/desktop.jpg);

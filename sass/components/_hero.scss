@@ -1,4 +1,5 @@
 .hero-section {
+  max-width: 480px;
   padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
@@ -32,6 +33,7 @@
 
 @media screen and (min-width: 768px) {
   .hero-section {
+    max-width: 768px;
     background-image: linear-gradient(
         getColor("hero-gradient"),
         getColor("hero-gradient")
@@ -54,6 +56,7 @@
 
 @media screen and (min-width: 1200px) {
   .hero-section {
+    max-width: 1600px;
     padding: 200px 0;
     background-image: linear-gradient(
         getColor("hero-gradient"),
