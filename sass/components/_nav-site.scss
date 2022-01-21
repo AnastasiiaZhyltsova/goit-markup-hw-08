@@ -2,6 +2,7 @@
   @media screen and (max-width: 767px) {
     display: none;
     position: fixed;
+    overflow-y: hidden;
     left: 0;
     top: 0;
     width: 100vw;
@@ -19,7 +20,7 @@
 
     &.is-open {
       display: block;
-      overflow-y: hidden;
+
       position: fixed;
     }
   }

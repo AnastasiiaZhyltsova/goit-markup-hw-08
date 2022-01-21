@@ -41,6 +41,7 @@
   .menu-header {
     display: none;
     position: fixed;
+    overflow-y: hidden;
     left: 0;
     top: 0;
     width: 100vw;
@@ -54,7 +55,6 @@
   }
   .menu-header.is-open {
     display: block;
-    overflow-y: hidden;
     position: fixed;
   }
 }
@@ -218,6 +218,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -353,6 +356,10 @@ body {
   letter-spacing: 0.03em;
   background-color: #ffffff;
   color: #212121;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 ul {
