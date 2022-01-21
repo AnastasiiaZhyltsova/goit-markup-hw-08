@@ -20,6 +20,7 @@
     &.is-open {
       display: block;
       overflow-y: scroll;
+      position: fixed;
     }
   }
 
@@ -134,4 +135,7 @@
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
+}
+.contacts-header--flex {
+  flex-grow: 1;
 }

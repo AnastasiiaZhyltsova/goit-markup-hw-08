@@ -8,6 +8,10 @@
   &:nth-child(4) {
     margin-bottom: 20px;
   }
+
+  &:focus {
+    color: getColor("accent");
+  }
 }
 
 .form__label {
@@ -18,6 +22,12 @@
   letter-spacing: 0.01em;
 
   color: getColor("secondary-text");
+
+  @media screen and (max-width: 767px) {
+    .form__field:focus-within > & {
+      color: getColor("accent");
+    }
+  }
 }
 
 .form__input {
@@ -49,7 +59,7 @@
   fill: getColor("primary-text");
   transition: fill 250ms getTimingFunction("primary");
 
-  .form__input:focus + & {
+  .form__field:focus-within > & {
     fill: getColor("accent");
   }
 }
@@ -123,7 +133,7 @@
 }
 
 .checkbox__text {
-  font-size: 12px;
+  font-size: 11.5px;
   line-height: 1.16;
 
   color: getColor("secondary-text");

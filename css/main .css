@@ -55,6 +55,7 @@
   .menu-header.is-open {
     display: block;
     overflow-y: scroll;
+    position: fixed;
   }
 }
 
@@ -175,6 +176,12 @@
   .nav-site {
     margin-left: 93px;
   }
+}
+
+.contacts-header--flex {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .contacts-header {

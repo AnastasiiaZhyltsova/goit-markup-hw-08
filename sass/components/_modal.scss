@@ -38,6 +38,10 @@
 .modal {
   position: relative;
 
+  max-width: 450px;
+  margin-right: auto;
+  margin-left: auto;
+
   padding: 40px 40px 40px 40px;
 
   background-color: getColor("white");
