@@ -54,7 +54,7 @@
   }
   .menu-header.is-open {
     display: block;
-    overflow-y: scroll;
+    overflow-y: hidden;
     position: fixed;
   }
 }
@@ -71,11 +71,19 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  min-height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-header--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    min-height: 100%;
+  }
 }
 
 .button-menu {
@@ -172,8 +180,13 @@
   }
 }
 
+.nav-site {
+  width: 450px;
+}
+
 @media screen and (min-width: 768px) {
   .nav-site {
+    width: auto;
     margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
