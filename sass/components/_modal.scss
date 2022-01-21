@@ -27,17 +27,13 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding: 208px 159px 0 159px;
-  }
-
-  @media screen and (min-width: 1200px) {
     padding: 0;
   }
 }
 
-// .modal-open {
-//   overflow: hidden;
-// }
+.modal-open {
+  overflow: hidden;
+}
 /* modal*/
 .modal {
   position: relative;
@@ -58,14 +54,18 @@
   transition: opacity 250ms getTimingFunction("primary"),
     transform 250ms getTimingFunction("primary");
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     position: absolute;
-    max-width: 528px;
-    height: 581px;
     top: 50%;
     left: 50%;
-
     transform: translate(-50%, -50%);
+
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    height: 581px;
   }
 }
 
