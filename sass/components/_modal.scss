@@ -1,7 +1,7 @@
 /* backdrop */
 .backdrop {
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   height: 100%;
   width: 100%;
   right: 0;
@@ -19,12 +19,13 @@
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
-    visibility: hidden;
+    // visibility: hidden;
   }
 
   &.is-hidden .modal {
     opacity: 0;
   }
+
   @media screen and (min-width: 768px) {
     padding: 208px 159px 0 159px;
   }
@@ -34,6 +35,9 @@
   }
 }
 
+// .modal-open {
+//   overflow: hidden;
+// }
 /* modal*/
 .modal {
   position: relative;
@@ -56,10 +60,11 @@
 
   @media screen and (min-width: 1200px) {
     position: absolute;
-    width: 528px;
+    max-width: 528px;
     height: 581px;
     top: 50%;
     left: 50%;
+
     transform: translate(-50%, -50%);
   }
 }

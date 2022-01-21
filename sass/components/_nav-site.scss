@@ -1,7 +1,7 @@
 .menu-header {
   @media screen and (max-width: 767px) {
     display: none;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100vw;
@@ -113,6 +113,7 @@
     &::after {
       content: "";
       display: block;
+
       position: absolute;
       top: 77px;
       left: 0;

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
-<body>
+<body class="modal-open">
     <!--Шапка сайта-->
     <header class="page-header">
         <div class="container page-header__container">
@@ -33,7 +33,7 @@
                     </li>
                 </ul>
            </nav>
-            <div class="contacts-header--flex">
+            <!-- <div class="contacts-header--flex"> -->
                 <ul class="contacts-header">
                     <li class="contacts-header__item">
                         <a href="tel:+380961111111" class="contacts-header__link--number">
@@ -70,7 +70,7 @@
                         <a href="./index.html" class="socials-header__link">LinkedIn</a>
                     </li>
                 </ul>
-            </div>
+            <!-- </div> -->
             </div>
             <button type="button" 
             class="button-menu"
@@ -563,7 +563,7 @@
     </div>      
     </footer>
    <!--Модальное окно-->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden"  data-modal>
         <div class="modal">
             <button class="modal__close" data-modal-close >
                 <svg class="modal__icon" width="18px" height="18px">
