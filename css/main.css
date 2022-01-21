@@ -67,6 +67,17 @@
   }
 }
 
+.menu-header--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  min-height: 100%;
+}
+
 .button-menu {
   top: 10px;
   right: 15px;
@@ -106,15 +117,16 @@
   margin-bottom: 32px;
 }
 
+.nav-site__item:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
   .nav-site__item {
     margin: 0 0 0 50px;
   }
   .nav-site__item:first-child {
     margin-left: 0;
-  }
-  .nav-site__item:last-child {
-    margin-bottom: 0;
   }
 }
 
